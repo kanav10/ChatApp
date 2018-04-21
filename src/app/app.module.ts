@@ -19,7 +19,7 @@ import { AuthProvider } from '../providers/auth/auth';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp , {tabsPlacement : 'top'}),
     AngularFireModule.initializeApp(config),
   ],
   bootstrap: [IonicApp],

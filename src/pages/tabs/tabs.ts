@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ChatsPage } from '../chats/chats';
+import { GroupsPage } from '../groups/groups';
+import { ProfilePage } from '../profile/profile'; 
 
 /**
  * Generated class for the TabsPage page.
@@ -15,11 +18,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TabsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  tab1: string = "ChatsPage";
+  tab2: string = "GroupsPage";
+  tab3: string = "ProfilePage";
+
+  constructor() {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TabsPage');
-  }
+ 
 
 }
