@@ -14,6 +14,11 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { config } from './app.firebaseconfig';
 import { AuthProvider } from '../providers/auth/auth';
 import { UserProvider } from '../providers/user/user';
+import { ImghandlerProvider } from '../providers/imghandler/imghandler';
+
+import {File} from '@ionic-native/file';
+import {FilePath} from '@ionic-native/file-path';
+import {FileChooser} from '@ionic-native/file-chooser';
 @NgModule({
   declarations: [
     MyApp,
@@ -33,7 +38,12 @@ import { UserProvider } from '../providers/user/user';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
     AngularFireAuth,
-    UserProvider
+    UserProvider,
+    ImghandlerProvider,
+    File,
+    FilePath,
+    FileChooser
+
   ]
 })
 export class AppModule {}
