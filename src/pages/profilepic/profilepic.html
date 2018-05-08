@@ -21,11 +21,11 @@
   <button ion-button round outline (click)="chooseimage()">choose an image</button>
 </div>
 
-<div [hidden]="moveon">
+<div [hidden]="!moveon">
     <button ion-button round outline (click)="proceed()">Skip this step</button>
   </div>
 
-<div[hidden]="!moveon">
+<div [hidden]="moveon">
     <button ion-button round outline (click)="updateproceed()">upload and proceed</button>
   </div>
 </ion-content>

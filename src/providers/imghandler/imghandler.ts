@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import {File} from '@ionic-native/file';
 import {FilePath} from '@ionic-native/file-path';
 import {FileChooser} from '@ionic-native/file-chooser';
+import firebase from 'firebase';
 /*
   Generated class for the ImghandlerProvider provider.
 
